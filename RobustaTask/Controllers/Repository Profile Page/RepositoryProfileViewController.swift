@@ -64,6 +64,10 @@ class RepositoryProfileViewController: UIViewController {
             return
         }
         ownerImageView.loadImageUsingCache(withUrl: url)
-        dateLabel.text = model?.created_at
+        guard let repoCreationDate = model?.created_at else {return}
+         let isRepoDateMoreThan6Months = repoCreationDate.isRepoDateMoreThan6Months()
+        guard let formattedDate = FormattedDate(dateString: repoCreationDate) else {return}
+        dateLabel.text = isRepoDateMoreThan6Months ? formattedDate.dayname + ", " + formattedDate.month + " " + formattedDate.day + ", " + formattedDate.year : "\(repoCreationDate.months) ago"
     }
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80068B228FC87AE00B27AE9 /* FormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80068B128FC87AE00B27AE9 /* FormattedDate.swift */; };
 		C85119BB28F9910300D5CED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85119BA28F9910300D5CED8 /* AppDelegate.swift */; };
 		C85119BD28F9910300D5CED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85119BC28F9910300D5CED8 /* SceneDelegate.swift */; };
 		C85119BF28F9910300D5CED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85119BE28F9910300D5CED8 /* ViewController.swift */; };
@@ -29,11 +30,13 @@
 		C8858B7328FAFD4900648A59 /* RepositoryProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8858B7128FAFD4900648A59 /* RepositoryProfileViewController.xib */; };
 		C8858B7528FC020E00648A59 /* RepositoryProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8858B7428FC020E00648A59 /* RepositoryProfileViewModel.swift */; };
 		C8858B7728FC02B100648A59 /* RepositoryProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8858B7628FC02B100648A59 /* RepositoryProfileService.swift */; };
+		C88B06DD28FC84F300FC840E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88B06DC28FC84F300FC840E /* String.swift */; };
 		C88CE00728FA1D7500273855 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CE00628FA1D7500273855 /* UIViewController.swift */; };
 		C88CE00928FA1D8F00273855 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CE00828FA1D8F00273855 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C80068B128FC87AE00B27AE9 /* FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDate.swift; sourceTree = "<group>"; };
 		C85119B728F9910300D5CED8 /* RobustaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobustaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85119BA28F9910300D5CED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85119BC28F9910300D5CED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		C8858B7128FAFD4900648A59 /* RepositoryProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryProfileViewController.xib; sourceTree = "<group>"; };
 		C8858B7428FC020E00648A59 /* RepositoryProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProfileViewModel.swift; sourceTree = "<group>"; };
 		C8858B7628FC02B100648A59 /* RepositoryProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProfileService.swift; sourceTree = "<group>"; };
+		C88B06DC28FC84F300FC840E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C88CE00628FA1D7500273855 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C88CE00828FA1D8F00273855 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,7 @@
 				C85119D228F991C000D5CED8 /* ApplicationController.swift */,
 				C85119EC28F99B8200D5CED8 /* Variable.swift */,
 				C8858B6C28FAFB7A00648A59 /* ViewControllerProvider.swift */,
+				C80068B128FC87AE00B27AE9 /* FormattedDate.swift */,
 			);
 			path = RobustaTask;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			children = (
 				C88CE00628FA1D7500273855 /* UIViewController.swift */,
 				C88CE00828FA1D8F00273855 /* UIImageView.swift */,
+				C88B06DC28FC84F300FC840E /* String.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88B06DD28FC84F300FC840E /* String.swift in Sources */,
 				C85119BF28F9910300D5CED8 /* ViewController.swift in Sources */,
 				C8858B7528FC020E00648A59 /* RepositoryProfileViewModel.swift in Sources */,
 				C8858B6D28FAFB7A00648A59 /* ViewControllerProvider.swift in Sources */,
@@ -280,6 +287,7 @@
 				C8858B6B28FAFAB900648A59 /* RepositoriesService.swift in Sources */,
 				C85119E128F996BF00D5CED8 /* RepositoriesViewController.swift in Sources */,
 				C88CE00728FA1D7500273855 /* UIViewController.swift in Sources */,
+				C80068B228FC87AE00B27AE9 /* FormattedDate.swift in Sources */,
 				C85119C528F9910300D5CED8 /* RobustaTask.xcdatamodeld in Sources */,
 				C85119EB28F999E200D5CED8 /* Repository.swift in Sources */,
 				C85119DD28F9943800D5CED8 /* RepositoryableViewCell.swift in Sources */,
