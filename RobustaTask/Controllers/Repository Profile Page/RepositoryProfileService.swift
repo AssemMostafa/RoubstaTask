@@ -7,7 +7,6 @@
 
 import Foundation
 
-import Foundation
 protocol RepositoryProfileServicing {
     func getOwnerRepositoryInfo(login: String, completion: @escaping (Result<RepositoryOwner, Error>) -> Void)
 }
@@ -30,9 +29,18 @@ class RepositoryProfileService: RepositoryProfileServicing {
         }
         task.resume()
     }
-
-
-
 }
 
 
+class MockRepositoryProfileService: RepositoryProfileServicing {
+    var getProfileCounter = 0
+    var getProfileModel: Owner!
+    func getOwnerRepositoryInfo(login: String, completion: @escaping (Result<RepositoryOwner, Error>) -> Void) {
+        getProfileCounter += 1
+//        getProfileModel = Owner
+        let response = RepositoryOwner(id: 1, login: "newLogin", avatar_url: nil, name: "new", company: "Company", location: "newLocation", public_repos: 3, public_gists: 4, followers: 3, following: 4, created_at: "")
+        completion(.success(response))
+    }
+
+
+}

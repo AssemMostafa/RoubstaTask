@@ -37,7 +37,8 @@ class RepositoryableViewCell: UITableViewCell {
         repositoryName.text = model.name
         ownerNameLabel.text = model.owner?.login
         guard let url = model.owner?.avatar_url else {
-            return
+            return ownerImageView.image = UIImage(named: "mockPoster")
+
         }
         ownerImageView.loadImageUsingCache(withUrl: url)
     }

@@ -61,7 +61,7 @@ class RepositoryProfileViewController: UIViewController {
         publicReposLabel.text = "\(model?.public_repos ?? 0)"
         ownerNameLabel.text = model?.name
         guard let url = model?.avatar_url else {
-            return
+            return ownerImageView.image = UIImage(named: "mockPoster")
         }
         ownerImageView.loadImageUsingCache(withUrl: url)
         guard let repoCreationDate = model?.created_at else {return}
