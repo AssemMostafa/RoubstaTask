@@ -33,7 +33,18 @@
 		C88B06DD28FC84F300FC840E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88B06DC28FC84F300FC840E /* String.swift */; };
 		C88CE00728FA1D7500273855 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CE00628FA1D7500273855 /* UIViewController.swift */; };
 		C88CE00928FA1D8F00273855 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CE00828FA1D8F00273855 /* UIImageView.swift */; };
+		C8F6C1572901792200D5932D /* RobustaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6C1562901792200D5932D /* RobustaTaskTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8F6C1582901792200D5932D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C85119AF28F9910300D5CED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85119B628F9910300D5CED8;
+			remoteInfo = RobustaTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C80068B128FC87AE00B27AE9 /* FormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedDate.swift; sourceTree = "<group>"; };
@@ -64,10 +75,19 @@
 		C88B06DC28FC84F300FC840E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		C88CE00628FA1D7500273855 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C88CE00828FA1D8F00273855 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		C8F6C1542901792200D5932D /* RobustaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F6C1562901792200D5932D /* RobustaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C85119B428F9910300D5CED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F6C1512901792200D5932D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C85119B928F9910300D5CED8 /* RobustaTask */,
+				C8F6C1552901792200D5932D /* RobustaTaskTests */,
 				C85119B828F9910300D5CED8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C85119B728F9910300D5CED8 /* RobustaTask.app */,
+				C8F6C1542901792200D5932D /* RobustaTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +221,14 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		C8F6C1552901792200D5932D /* RobustaTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F6C1562901792200D5932D /* RobustaTaskTests.swift */,
+			);
+			path = RobustaTaskTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +249,24 @@
 			productReference = C85119B728F9910300D5CED8 /* RobustaTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8F6C1532901792200D5932D /* RobustaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8F6C15A2901792200D5932D /* Build configuration list for PBXNativeTarget "RobustaTaskTests" */;
+			buildPhases = (
+				C8F6C1502901792200D5932D /* Sources */,
+				C8F6C1512901792200D5932D /* Frameworks */,
+				C8F6C1522901792200D5932D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F6C1592901792200D5932D /* PBXTargetDependency */,
+			);
+			name = RobustaTaskTests;
+			productName = RobustaTaskTests;
+			productReference = C8F6C1542901792200D5932D /* RobustaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,6 +279,10 @@
 				TargetAttributes = {
 					C85119B628F9910300D5CED8 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					C8F6C1532901792200D5932D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C85119B628F9910300D5CED8;
 					};
 				};
 			};
@@ -248,6 +300,7 @@
 			projectRoot = "";
 			targets = (
 				C85119B628F9910300D5CED8 /* RobustaTask */,
+				C8F6C1532901792200D5932D /* RobustaTaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +316,13 @@
 				C85119E228F996BF00D5CED8 /* RepositoriesViewController.xib in Resources */,
 				C85119C728F9910500D5CED8 /* Assets.xcassets in Resources */,
 				C85119C228F9910300D5CED8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F6C1522901792200D5932D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +356,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8F6C1502901792200D5932D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F6C1572901792200D5932D /* RobustaTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8F6C1592901792200D5932D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C85119B628F9910300D5CED8 /* RobustaTask */;
+			targetProxy = C8F6C1582901792200D5932D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C85119C028F9910300D5CED8 /* Main.storyboard */ = {
@@ -488,6 +564,148 @@
 			};
 			name = Release;
 		};
+		C8F6C14E2901730D00D5932D /* Debug MOCK */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = MOCK;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug MOCK";
+		};
+		C8F6C14F2901730D00D5932D /* Debug MOCK */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5W84W737B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RobustaTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RobustaTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug MOCK";
+		};
+		C8F6C15B2901792200D5932D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5W84W737B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RobustaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobustaTask.app/RobustaTask";
+			};
+			name = Debug;
+		};
+		C8F6C15C2901792200D5932D /* Debug MOCK */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5W84W737B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RobustaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobustaTask.app/RobustaTask";
+			};
+			name = "Debug MOCK";
+		};
+		C8F6C15D2901792200D5932D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5W84W737B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RobustaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobustaTask.app/RobustaTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +713,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C85119CC28F9910500D5CED8 /* Debug */,
+				C8F6C14E2901730D00D5932D /* Debug MOCK */,
 				C85119CD28F9910500D5CED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -504,7 +723,18 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C85119CF28F9910500D5CED8 /* Debug */,
+				C8F6C14F2901730D00D5932D /* Debug MOCK */,
 				C85119D028F9910500D5CED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8F6C15A2901792200D5932D /* Build configuration list for PBXNativeTarget "RobustaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8F6C15B2901792200D5932D /* Debug */,
+				C8F6C15C2901792200D5932D /* Debug MOCK */,
+				C8F6C15D2901792200D5932D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
