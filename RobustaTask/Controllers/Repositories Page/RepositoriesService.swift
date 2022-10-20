@@ -32,3 +32,12 @@ class RepositoriesService: RepositoriesServicing {
     }
 }
 
+class MockRepositoriesService: RepositoriesServicing {
+
+    var getReposCounter = 0
+    func getRepositoriesInfo(completion: @escaping (Result<[Repository], Error>) -> Void) {
+        getReposCounter += 1
+        let response = [Repository(id: 1, name: "new", owner: Owner(id: 1, login: "newLogin", avatar_url: nil)), Repository(id: 2, name: "new", owner: Owner(id: 2, login: "newLogin", avatar_url: nil)), Repository(id: 3, name: "new", owner: Owner(id: 3, login: "newLogin", avatar_url: "sdcsscs"))]
+        completion(.success(response))
+    }
+}
